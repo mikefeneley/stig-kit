@@ -1,7 +1,8 @@
+from selection import Selection
+
 class STIG_KIT:
     def __init__(self):
-        print("Init")
-    
+        selection = Selection() 
     def start(self):
         print("Hello")
 
