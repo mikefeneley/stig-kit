@@ -32,9 +32,12 @@ class Selection:
 
     def run(self):
         print(self.run_jre.get(), self.run_apache.get())
-        if self.run_jre:
+        if self.run_jre.get() == 1:
+            print("In here?1")
             self.jre_audit.audit()
-        if self.run_apache:
+        if self.run_apache.get() == 1:
+            print("In here?2")
+
             self.apache_audit.audit()
 
 
