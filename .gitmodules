@@ -1,6 +1,3 @@
-[submodule "src/stig-jre"]
-	path = src/stig-jre
-	url = https://github.com/mikefeneley/stig-jre.git
 [submodule "src/stig-apache"]
 	path = src/stig-apache
 	url = https://github.com/mikefeneley/stig-apache.git
