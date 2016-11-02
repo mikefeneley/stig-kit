@@ -38,7 +38,6 @@ class Selection:
 
         logs = []
 
-        print(self.run_jre.get(), self.run_apache.get())
         if self.run_jre.get() == 1:
             log = self.jre_audit.audit()
             logs.append(log)
@@ -54,7 +53,6 @@ class Selection:
         quit()
 
     def build_output(self, logs, out_log=LOG_FILENAME):
-
         out_log = open(out_log, 'w')
         out_log.write("AUDIT RESULTS\n\n")
 
