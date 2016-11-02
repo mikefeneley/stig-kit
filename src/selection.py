@@ -35,13 +35,17 @@ class Selection:
             self.master.update()
 
     def run(self):
+
+        logs = []
+
         print(self.run_jre.get(), self.run_apache.get())
         if self.run_jre.get() == 1:
-            self.jre_audit.audit()
+            log = self.jre_audit.audit()
+            logs.append(log)
         if self.run_apache.get() == 1:
-            self.apache_audit.audit()
-
-        self.build_output()
+            log = self.apache_audit.audit()
+            logs.append(log)
+        self.build_output(logs)
         
     def exit(self):
         del self.jre_audit
@@ -49,22 +53,20 @@ class Selection:
         del self.master
         quit()
 
-    def build_output(self):
-        out_log = open(LOG_FILENAME, 'w')
-        out_log.write("AUDIT RESULTS")
+    def build_output(self, logs, out_log=LOG_FILENAME):
 
-        if self.run_jre.get() == 1:
-            in_log = open("JRELog.txt", 'r')
-            self.copy(in_log, out_log)
-        if self.run_apache.get() == 1:
-            in_log = open("ApacheConfigLog.txt")
-            self.copy(in_log, out_log)
+        out_log = open(out_log, 'w')
+        out_log.write("AUDIT RESULTS\n\n")
+
+        for log in logs:
+            self.copy(log, out_log)
         out_log.close()
 
     def copy(self, input, output):
-        for line in input:
+        in_log = open(input, 'r')
+        for line in in_log:
             output.write(line)
-        input.close()
+        in_log.close()
 
 if __name__ == '__main__':
     selection = Selection()
