@@ -1,4 +1,4 @@
-git add *
+git add . 
 git commit -m "Generic commit message"
 git push -u origin master
 
