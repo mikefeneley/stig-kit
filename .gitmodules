@@ -4,18 +4,9 @@
 [submodule "src/stig-jre"]
 	path = src/stig-jre
 	url = https://github.com/mikefeneley/stig-jre.git
-[submodule "src/stig-windows7"]
-	path = src/stig-windows7
-	url = https://github.com/mikefeneley/stig-windows7.git
 [submodule "src/stig-windows10"]
 	path = src/stig-windows10
 	url = https://github.com/mikefeneley/stig-windows10.git
 [submodule "src/stig-mac"]
 	path = src/stig-mac
 	url = https://github.com/mikefeneley/stig-mac.git
-[submodule "src/stig-firefox"]
-	path = src/stig-firefox
-	url = https://github.com/mikefeneley/stig-firefox.git
-[submodule "src/stig-windows8"]
-	path = src/stig-windows8
-	url = https://github.com/mikefeneley/stig-windows8.git
