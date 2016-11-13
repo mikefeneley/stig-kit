@@ -1,5 +1,6 @@
 # stig-kit
 
+<b>Update 11/13/2016:</b>
 
 STIG-KIT was originally intended to be a vulnerability checker that checked application configuration against the recommendations of the STIG guides provided by the DISA. The STIG-KIT used Python implementations of each individual STIG guide to check against the STIG requirements.
 
