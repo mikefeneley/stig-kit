@@ -19,6 +19,12 @@ The README files of the sub stig-checkers which describe the rules supported can
 
 https://github.com/mikefeneley/stig-apache
 
-https://github.com/mikefeneley/stig-windows10
+https://github.com/mikefeneley/stig-windsows10
 
 https://github.com/mikefeneley/stig-jre
+
+<b>Using the Program</b>
+
+The program can be run using the command line. Navigate to the src folder after downloading and execute program with the following command:
+
+<i>python selection.py</i>
