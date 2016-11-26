@@ -20,6 +20,9 @@ Initially this tool was originally intended to just check and report misconfigua
 
 I am still going to work on extending the number of findings that are supported by the STIG Kit, but I also intend to add configuration change functitonality to the program.
 
+
+<b>Overview</b>
+
 The README files of the sub stig-checkers which describe the rules supported can be found here:
 
 
