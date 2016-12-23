@@ -37,3 +37,10 @@ https://github.com/mikefeneley/stig-jre
 The program can be run using the command line. Navigate to the src folder after downloading and execute program with the following command:
 
 <i>python selection.py</i>
+
+
+<br>
+<br>
+<b>Contact:</b>
+
+Michael Feneley: mfeneley(at)vt.edu
